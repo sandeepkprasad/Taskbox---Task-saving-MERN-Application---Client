@@ -28,6 +28,9 @@ const AddTask = () => {
             placeholder="Add Task"
             className="p-1 border-2 border-rose-200 rounded-lg shadow"
             onChange={handleChange}
+            minLength={1}
+            maxLength={12}
+            required
           />
         </form>
         <button

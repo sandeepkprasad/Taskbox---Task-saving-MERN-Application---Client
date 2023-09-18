@@ -60,6 +60,8 @@ const Signup = () => {
                     placeholder="Enter Full Name"
                     className="p-1 border-2 border-slate-200 rounded-lg w-2/3"
                     onChange={handleChange}
+                    minLength={4}
+                    required
                   />
                 </div>
               </div>
@@ -81,6 +83,8 @@ const Signup = () => {
                     placeholder="Enter Username"
                     className="p-1 border-2 border-slate-200 rounded-lg w-2/3"
                     onChange={handleChange}
+                    minLength={6}
+                    required
                   />
                 </div>
               </div>
@@ -102,6 +106,8 @@ const Signup = () => {
                     placeholder="Enter Password"
                     className="p-1 border-2 border-slate-200 rounded-lg w-2/3"
                     onChange={handleChange}
+                    minLength={8}
+                    required
                   />
                 </div>
               </div>
