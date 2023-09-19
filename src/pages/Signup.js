@@ -41,7 +41,7 @@ const Signup = () => {
             <h3 className="font-bold text-slate-900 text-3xl text-center">
               Create Your Account
             </h3>
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="space-y-3">
                 <div>
                   <label
@@ -111,13 +111,13 @@ const Signup = () => {
                   />
                 </div>
               </div>
+              <button
+                type="submit"
+                className="font-bold bg-rose-500 text-white hover:bg-rose-700 duration-300 rounded-lg px-3 py-1.5"
+              >
+                Create
+              </button>
             </form>
-            <button
-              className="font-bold bg-rose-500 text-white hover:bg-rose-700 duration-300 rounded-lg px-3 py-1.5"
-              onClick={handleSubmit}
-            >
-              Create
-            </button>
             <p className="font-medium text-sm text-slate-500 tracking-wide">
               Already have an account?{" "}
               <Link to="/login" className="text-blue-700">

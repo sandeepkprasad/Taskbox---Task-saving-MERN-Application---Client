@@ -19,7 +19,7 @@ const AddTask = () => {
   return (
     <div className="w-full h-[50px] flex justify-center items-center">
       <div className="w-1/3 flex justify-center space-x-5">
-        <form>
+        <form onSubmit={handleAddTask}>
           <input
             type="text"
             name="task"
@@ -32,13 +32,13 @@ const AddTask = () => {
             maxLength={12}
             required
           />
+          <button
+            type="submit"
+            className="font-bold bg-black text-white hover:bg-slate-700 duration-300 rounded-lg px-3 py-1.5"
+          >
+            Add
+          </button>
         </form>
-        <button
-          className="font-bold bg-black text-white hover:bg-slate-700 duration-300 rounded-lg px-3 py-1.5"
-          onClick={handleAddTask}
-        >
-          Add
-        </button>
       </div>
     </div>
   );
